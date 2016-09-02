@@ -36,7 +36,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 var AWS = require('aws-sdk');
-var db = new AWS.DynamoDB.DocumentClient({region: "us-west-2", accessKeyId: "AKIAI23TEKUL5NWX2VPQ", secretAccessKey: "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",});
+var awsKey = require('./AWS_key');
+var db = new AWS.DynamoDB.DocumentClient({region: awsKey.region, accessKeyId: awsKey.accessKeyId, secretAccessKey: awsKey.secretAccessKey});
 
 var port = process.env.PORT || 5000;
 
