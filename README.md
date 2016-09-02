@@ -47,8 +47,8 @@ The DELETE users call deletes the user with the given email from the bookLogUser
 
 Path:<i> /users <br></i>
 Required Query Parameters: <br>
-<i>• email<br>
-Responses:<br></i>
+<i>• email<br></i>
+Responses:<br>
 <i>• 200 	The user record in bookLogUsers and all associated book records in bookLogBooks have been deleted.<br>
 • 304	The user record in bookLogUsers has been deleted, but there was an error deleting one or more book records from bookLogBooks.<br>
 • 500	There was an error deleting the user record from bookLogUsers, and no book records have been deleted from bookLogBooks.<br></i>
@@ -59,8 +59,8 @@ The GET books call determines if there are books associated with a given email i
 
 Path:<i> /books <br></i>
 Required Query Parameters: <br>
-<i>• email<br>
-Responses:<br></i>
+<i>• email<br></i>
+Responses:<br>
 <i>• 200   There are book records associated with the given email, and their records are returned.<br>
 • 404   There are no book records associated with the given email.<br>
 • 500	  There was an error processing the request.<br></i>
@@ -90,7 +90,7 @@ The PUT books call updates the record of the book with the given title and user 
 Path:<i> /books <br></i>
 Required Query Parameters: <br>
 <i>• email<br>
-• title<br>
+• title<br></i>
 Optional Query Parameters:<br>
 <i>• author<br>
 • genre<br>
