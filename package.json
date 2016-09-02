@@ -1,0 +1,16 @@
+{
+  "name": "cs496_assignment3",
+  "version": "1.0.0",
+  "description": "Assignment3 is an API for a basic book-lending system.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lauren Miller",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.4.7",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
