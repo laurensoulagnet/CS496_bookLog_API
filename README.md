@@ -1,5 +1,5 @@
 #Book Log API
-This REST-based web API allowsusers to record books they have read. The API  uses Node.js and Express on the back-end, records records in a DynamoDB database, and is deployed using Amazon Web Service’s Elastic Beanstalk.
+This REST-based web API allows users to record books they have read. The API  uses Node.js and Express on the back-end, stores records in a DynamoDB database, and is deployed using Amazon Web Service’s Elastic Beanstalk.
 
 #Functionality
 Users can create, validate, and delete user accounts, which comprise an email and password. Users with accounts can then record or update records of the books they’ve read: the titles, authors, genres (out of a limited set of genres), ratings (out of 5 stars), and the the dates the books were read. 
